@@ -1,0 +1,28 @@
+Create database clinica;
+use clinica;
+drop table login;
+CREATE TABLE login(id int primary key auto_increment,usuario varchar(50) DEFAULT NULL,contrasena varchar(50)DEFAULT NULL,cargo int DEFAULT NULL);
+insert into login(usuario,contrasena,cargo) values("jonathan","villa97",1);
+
+drop table cargos;
+Create table cargo(idcargo int primary key auto_increment, ncargo varchar(50));
+insert into cargo(ncargo)values("Nefrólogo");
+insert into cargo(ncargo)values("Trabajadora Social");
+alter table login add constraint id_cargo foreign key(cargo) references cargo (idcargo) on delete cascade 
+on update cascade;
+
+Create table Historia_Clinica(id_historias int primary key auto_increment, nombres varchar(50), 
+apellidos varchar(50), edad int, telefono varchar(50), cedula varchar(50), codigo_historial int, 
+fecha_nacimiento date,genero varchar(50) DEFAULT NULL,descripcion text);
+
+Create table Expendiente_medico(id_historias int primary key auto_increment, nombres varchar(50), cedula varchar(50),
+ edad int, peso varchar(50), estatura int, dianostico text, cuadro_clinico text);
+
+Create table cita_medica(id_cita int primary key auto_increment, paciente varchar(60),
+fecha_cita date,fecha_registro date, medico varchar(60));
+
+
+
+
+
+

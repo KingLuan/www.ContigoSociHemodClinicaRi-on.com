@@ -1,0 +1,9 @@
+
+#contenedor{
+  display: grid;
+  min-width: 100%;
+}
+.colort{
+  font-family: Arial;
+  color:#B1251E;
+}

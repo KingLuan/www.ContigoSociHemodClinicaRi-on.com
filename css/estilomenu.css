@@ -1,0 +1,81 @@
+
+
+#slidebar-container{
+  min-height: 100vh;
+
+}
+#slidebar-container .logo{
+  padding: .875rem 1.25rem;
+}
+#slidebar-container .menu{
+  width: 12rem;
+}
+a:hover{
+  text-decoration: none;
+  color: #002646 !important;
+  cursor: pointer;
+}
+#slideb:hover{
+  background-color: #566573;
+
+}
+#slidesub:hover{
+  background-color: #000;
+
+}
+
+a{color: #fff; cursor: pointer;}
+
+/*----Búsqueda pacientes----*/
+/*Paginador*/
+.paginador ul{
+  list-style: none;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+}
+.paginador a, .Selected{
+  color: #000000;
+  border:2px solid #ddd;
+  display:inline-block;
+  font-size: 24px;
+  text-align: center;
+  width: 35px;
+  margin-top: 50px;
+
+}
+.paginador a:hover{
+  background: #ddd;
+
+}
+#bfond:hover{
+
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+}
+.Selected{
+  color: #000;
+  border: 1px solid #dadada;
+  margin-top: 50px;
+}
+
+/*buscador*/
+.formbuscar{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+.formbuscar .search{
+  background: #1faac8;
+  color: #fff;
+  padding: 0 20px;
+  border: 0;
+  cursor: pointer;
+  margin-left:10px;
+}
